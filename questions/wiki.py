@@ -22,6 +22,8 @@ def search(query):
 			dataLength = len(data)
 
 			resultContent = wiki.summary(data[0])
+			# return first 3 sentences of summary
+			resultContent = resultContent.split('.')[:3]
 
 			return parse(resultContent, 'Wikipedia')
 
