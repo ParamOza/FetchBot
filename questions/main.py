@@ -7,10 +7,9 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 
 def hello(request):
-	if request.method == 'POST':
-		body = request.values.get('Body', 'None')
-		resp = MessagingResponse()
+	body = request.values.get('Body', None)
+	resp = MessagingResponse()
 
-		msg = resp.message('Hello there. {}'.format(body))
+	resp.message('Hello there. {}'.format(body))
 
-		return str(resp)
+	return str(resp)
