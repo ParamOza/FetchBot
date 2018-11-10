@@ -19,11 +19,12 @@ def hello(request):
 	resp = MessagingResponse()
 
 	if ans['ans']:
-		resp.message('Here\'s what {} said: {}'.format(ans['src'], ans['ans']))
+		resp.message('🐶Here\'s what {} said: {}'.format(ans['src'], ans['ans']))
 	else:
 		resp.message('{} couldn\'t find an answer for your question: "{}"' \
 			.format(ans['src'], q))
 
-	resp.message('I sent something else!')
+		resp.message('I\'ll ask my friends if they know the answer. \
+			If they send me one, I\'ll send their response right away!🐶')
 
 	return str(resp)
