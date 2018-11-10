@@ -8,7 +8,7 @@
     if($r['plan'] == 'pp'){
         echo prep($stringin);
     } else if($r['plan'] == 'sub'){
-        echo sub($stringin);
+        //echo sub($stringin);
     }
 
     function prep($in){
