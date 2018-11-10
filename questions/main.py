@@ -2,8 +2,8 @@
 google cloud function thingy
 '''
 
-import wiki, wolf
-from twilio import MessagingResponse
+# import wiki, wolf
+from twilio.twiml.messaging_response import MessagingResponse
 
 
 def hello(request):
