@@ -9,12 +9,21 @@ from twilio.twiml.messaging_response import MessagingResponse
 def hello(request):
 	q = request.values.get('Body', None)
 
+	if q.lower().startswith('!wiki'):
+		ans = wiki.search(q)
+
 	ans = wolf.respond(q)
 	if not ans:
 		ans = wiki.search(q)
 
 	resp = MessagingResponse()
 
-	resp.message('Here\'s what {} said: {}'.format(ans['src'], ans['ans']))
+	if ans['ans']:
+		resp.message('Here\'s what {} said: {}'.format(ans['src'], ans['ans']))
+	else:
+		resp.message('{} couldn\'t find an answer for your question: "{}"' \
+			.format(ans['src'], q))
+
+	resp.message('I sent something else!')
 
 	return str(resp)

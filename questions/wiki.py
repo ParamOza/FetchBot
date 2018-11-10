@@ -14,13 +14,16 @@ def search(query):
 			break
 
 	else:
-		data = wiki.search(query)
+		try: 
+			data = wiki.search(query)
+		except WikipediaException:
+			return
+		else:
+			dataLength = len(data)
 
-		dataLength = len(data)
+			resultContent = wiki.summary(data[0])
 
-		resultContent = wiki.summary(data[0])
-
-		return parse(resultContent, 'Wikipedia')
+			return parse(resultContent, 'Wikipedia')
 
 if __name__ == '__main__':
 	search(input("Search: "))
