@@ -1,3 +1,4 @@
 import wikipedia as wiki
 
-print(wiki.summary("Wikipedia"))
+q = input("Search Wikipedia: ")
+print("Wikipedia summary: " + wiki.summary(q))
