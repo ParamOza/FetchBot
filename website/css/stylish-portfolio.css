@@ -71,6 +71,10 @@ h6 {
   line-height: 45px;
 }
 
+.light-bg {
+    background:rgba(25, 50, 25, 0.3)
+}
+
 .scroll-to-top:focus, .scroll-to-top:hover {
   color: white;
 }
