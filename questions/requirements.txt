@@ -1,1 +1,3 @@
 twilio
+wikipedia
+wolframalpha
