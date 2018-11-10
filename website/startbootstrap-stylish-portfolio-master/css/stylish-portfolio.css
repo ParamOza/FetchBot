@@ -93,8 +93,8 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,6 +102,8 @@ h6 {
 
 .masthead h1 {
   font-size: 4rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #fdfdfd;
   margin: 0;
   padding: 0;
 }
