@@ -59,7 +59,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-              <form>
+              <form onsubmit="checkCreds()">
                 <fieldset>
                 <!-- Form Name -->
                 <legend>Admin Login</legend>
@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Username</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="textinput" type="text" placeholder="username" class="form-control input-md">
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="passwordinput">Password</label>
                     <div class="col-md-4">
-                        <input id="passwordinput" name="passwordinput" type="password" placeholder="placeholder" class="form-control input-md">
+                        <input id="passwordinput" name="passwordinput" type="password" placeholder="password" class="form-control input-md">
                     </div>
                 </div>
 
@@ -85,7 +85,11 @@
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
                     <button id="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
-                    <script>function(submit)<script>
+                        <script>
+                            function checkCreds() {
+                                alert("The form was submitted");
+                            }
+                        </script>
                   </div>
                 </div>
 
@@ -119,3 +123,6 @@
     <script src="js/stylish-portfolio.min.js"></script>
 
 </body></html>
+
+
+20
