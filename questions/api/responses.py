@@ -19,8 +19,7 @@ def handle_personality(q):
 		'wow': 'I know, right??',
 		'do you know the muffin man': 'Who lives on Drurey Lane? Yes I do.',
 		'who are you': 'My name is Fetch!🐶',
-		'what do you do': 'Ask me a question, and I\'ll try my best to \
-			give you an answer!🐶'
+		'what do you do': 'Ask me a question, and I\'ll try my best to give you an answer!🐶'
 	}
 
 	if 'tootsie pop' in q and 'licks' in q:
