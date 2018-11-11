@@ -4,12 +4,48 @@ google cloud function thingy
 
 import wiki, wolf
 from twilio.twiml.messaging_response import MessagingResponse
+from send_help import send_help
+import issues
+
+bot_num = '+15743558881'
+
+def command(s):
+	return ' '.join(s.split()[1:])
 
 
 def hello(request):
 	q = request.values.get('Body', None)
+	from_num = request.form['From']
+
+	# if response from admin
+	# "!ans The 1st element is Hydrogen."
+	if q.lower().startswith('!ans'): # check if admin
+		admin_response = command(q)
+
+		# resolve issue
+		client = Client(os.environ['TWILIO_ACCOUNT_SID'], os.environ['TWILIO_AUTH_TOKEN'])
+		admin_num = from_num
+		recent_from_bot = client.messages.list(
+				from_=bot_num,
+				to=admin_num
+				)
+		resolved_id = recent_from_bot.body.split('#')[1]
+
+		entry = issues.resolve(resolved_id)
+		if entry:
+			resp.message('Thanks for your help!🐶')
+			_, issue, ask_num = entry
+
+		# send answer back to asker
+		follow_up = '"{}"\n👨‍💻Admin Response: {}'.format(issue, admin_response)
+		msg_response = client.messages.create(
+			body=follow_up,
+			to=ask_num,
+			from_=bot_num
+			)
 
 	if q.lower().startswith('!wiki'):
+		q = command(q)
 		ans = wiki.search(q)
 
 	ans = wolf.respond(q)
@@ -26,5 +62,6 @@ def hello(request):
 
 		resp.message('I\'ll ask my friends if they know the answer. \
 			If they send me one, I\'ll send their response right away!🐶')
+		send_help(q, from_num)
 
 	return str(resp)
