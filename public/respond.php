@@ -9,9 +9,7 @@
     curl_setopt($ch, CURLOPT_FORBID_REUSE,true);
 
     $resp = curl_exec($ch);
-    //var_dump(curl_getinfo($ch)); DEBUG
-    $header_size = curl_getinfo($this->ch,CURLINFO_HEADER_SIZE);
-    $result['body'] = substr( $response, $header_size );
+    var_dump(curl_getinfo($ch)); 
     curl_close($ch);
 
  ?>
