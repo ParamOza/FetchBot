@@ -26,17 +26,17 @@
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Phone Number </label>
-                        <input class="form-control col-5 ml-2 mr-auto" type="tel" name="phone" placeholder="1 (555) 324-6172">
+                        <input class="form-control col-4 ml-2 mr-auto" type="tel" name="phone" placeholder="1 (555) 324-6172">
                     </div>
 
                     <div class="form-group row my-3">
                         <label class="ml-auto mr-2">Email </label>
-                        <input class="form-control col-6 ml-2 mr-auto" type="text" name="email" placeholder="user@web.com">
+                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="email" placeholder="user@web.com">
                     </div>
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Password </label>
-                        <input class="form-control col-6 ml-2 mr-auto" type="passsword" name="passwd">
+                        <input class="form-control col-5 ml-2 mr-auto" type="passsword" name="passwd">
                     </div>
                     <hr class="w-50 my-3 border-top border-light">
                     <div class="form-group row my-2">
@@ -60,17 +60,17 @@
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Phone Number </label>
-                        <input class="form-control col-5 ml-2 mr-auto" type="tel" name="phone" placeholder="1 (555) 324-6172">
+                        <input class="form-control col-4 ml-2 mr-auto" type="tel" name="phone" placeholder="1 (555) 324-6172">
                     </div>
 
                     <div class="form-group row my-3">
                         <label class="ml-auto mr-2">Email </label>
-                        <input class="form-control col-6 ml-2 mr-auto" type="text" name="email" placeholder="user@web.com">
+                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="email" placeholder="user@web.com">
                     </div>
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Password </label>
-                        <input class="form-control col-6 ml-2 mr-auto" type="passsword" name="passwd">
+                        <input class="form-control col-5 ml-2 mr-auto" type="passsword" name="passwd">
                     </div>
                     <hr class="w-50 my-3 border-top border-light">
                     <div class="form-group row my-2">
