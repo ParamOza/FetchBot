@@ -16,14 +16,14 @@ def search(query):
 	else:
 		try: 
 			data = wiki.search(query)
-		except WikipediaException:
+		except Exception:
 			return
 		else:
-			dataLength = len(data)
 
 			resultContent = wiki.summary(data[0])
 			# return first 3 sentences of summary
-			resultContent = resultContent.split('.')[:3]
+			resultContent = resultContent.split('.')[:3][0]
+			print(resultContent, type(resultContent))
 
 			return parse(resultContent, 'Wikipedia')
 
