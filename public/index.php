@@ -42,7 +42,7 @@
 
   </head>
 
-  <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+  <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
     <!-- Modal Codel -->
     <div class="modal" tabindex="-1" role="dialog">
