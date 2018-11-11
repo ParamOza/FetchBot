@@ -44,13 +44,14 @@ def hello(request):
 			from_=bot_num
 			)
 
+
+	# send_help(q, from_num)
+
 	resp.message('{} couldn\'t find an answer for your question: "{}"' \
 			.format(ans['src'], q))
 
 	resp.message('I\'ll ask my friends if they know the answer. \
 		If they send me one, I\'ll send their response right away!🐶')
-
-	send_help(q, from_num)
 
 	# ans = wolf.respond(q)
 	# if not ans:
