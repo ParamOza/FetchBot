@@ -1,11 +1,11 @@
 <?php
     $r = $_REQUEST;
-    $stringin = file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com//pagefillins/register.html");
+    $stringin = file_get_contents("//pagefillins/register.html");
 
     $csrf_tok = bin2hex(random_bytes(32));
     $_SESSION['tok'] = $csrf_tok;
 
-    $men = file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html");
+    $men = file_get_contents("/pagefillins/menu.html");
     $stringin = str_replace('{Menu}', $men, $stringin);
 
     if($r['plan'] == 'pp'){
