@@ -47,7 +47,8 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1 big">Admins only if you got here good job at hacking</h1>
+        <h1 class="mb-1 big">Admins Only</h1>
+        <h3>If you got here and you're not an Admin<br>good job hacking</h3>
       </div>
       <div class="overlay"></div>
       <img src="img/dogLogo.png" class="dogimage" alt="doggo">
