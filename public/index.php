@@ -153,8 +153,8 @@
                       console.log(xhttp.responseText);
                     }
                 }
+                event.preventDefault();
             });
-            event.preventDefault();
         });
     </script>
 
