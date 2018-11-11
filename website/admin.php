@@ -59,7 +59,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-              <form onsubmit="checkCreds()">
+              <form onsubmit="checkCreds()" id="adminForm">
                 <fieldset>
                 <!-- Form Name -->
                 <legend>Admin Login</legend>
@@ -68,7 +68,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Username</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="textinput" type="text" placeholder="username" class="form-control input-md">
+                        <input id="textinput" name="usernameinput" type="text" placeholder="username" class="form-control input-md">
                     </div>
                 </div>
 
@@ -87,8 +87,12 @@
                     <button id="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
                         <script>
                             function checkCreds() {
-                                var url= "google.com"; 
-                                window.location = url;
+                                var usernamePassword= ["miles", "admin0","param","admin1","karsey","admin2","mateo","admin3"];
+
+                                document.getElementById("adminForm").elements["usernameinput"]
+                                document.getElementById("adminForm").elements["passwordinput"]
+
+                                window.location.href = "http://stackoverflow.com";
                             }
                         </script>
                   </div>
@@ -124,6 +128,3 @@
     <script src="js/stylish-portfolio.min.js"></script>
 
 </body></html>
-
-
-20
