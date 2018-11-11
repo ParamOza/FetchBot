@@ -141,16 +141,17 @@
 
     <script>
         $(document).ready(function() {
-            $("#testquestionform").submit(function() {
+            $("#testquestionform").submit(function(event) {
                 var xhttp = new XMLHttpRequest();
                 var req = $("#questionOutput").val();
                 xhttp.open("GET", "/respond.php?q="+req, true);
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
-                      console.log(xhttp.getResponse()));
+                      console.log(xhttp.responseText);
                     }
                 }
+                event.preventDefault();
             });
         });
     </script>
