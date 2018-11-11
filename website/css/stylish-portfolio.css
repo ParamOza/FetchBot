@@ -388,7 +388,11 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 
-.dogimage{
-     height: 100vh;
-     margin-top:10vh;
+.dogimage {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    height: 49vh;
+    margin-top: 34vh;
 }
