@@ -136,9 +136,8 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content text-center">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">We have an answer:</h5>
+            <h5 class="modal-title display-4 mx-auto" id="exampleModalLabel">We have an answer:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
@@ -147,7 +146,7 @@
               <i class="fas fa-quote-right"></i>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn-lg btn-secondary mx-auto" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
