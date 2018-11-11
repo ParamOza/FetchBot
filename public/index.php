@@ -43,7 +43,7 @@
 
   </head>
 
-  <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+  <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
     <!-- Navigation -->
     <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?>
