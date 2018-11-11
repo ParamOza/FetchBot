@@ -167,6 +167,8 @@
         $(document).ready(function() {
             $("#testquestionform").submit(function(event) {
                 $(".hidertq").hide();
+                $(".modal-footer").hide();
+                
                 $("#showans").text("⌛ This won't take long...");
                 $("#displaymod").modal();
 
@@ -178,6 +180,8 @@
                     if(this.readyState == this.DONE) {
                       //console.log(xhttp.responseText);
                       $(".hidertq").show();
+                      $(".modal-footer").show();
+
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
                     }
