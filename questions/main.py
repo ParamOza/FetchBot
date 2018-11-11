@@ -50,8 +50,8 @@ def hello(request):
 	resp.message('{} couldn\'t find an answer for your question: "{}"' \
 			.format(ans['src'], q))
 
-	resp.message('I\'ll ask my friends if they know the answer. \
-		If they send me one, I\'ll send their response right away!🐶')
+	# resp.message('I\'ll ask my friends if they know the answer. \
+	# 	If they send me one, I\'ll send their response right away!🐶')
 
 	# ans = wolf.respond(q)
 	# if not ans:
