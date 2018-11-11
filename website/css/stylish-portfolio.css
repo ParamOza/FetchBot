@@ -88,11 +88,10 @@ h6 {
 }
 
 .masthead {
-  min-height: 30rem;
+  display: block;
+  overflow: auto;
   position: relative;
-  display: table;
   width: 100%;
-  height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: -webkit-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
@@ -115,7 +114,8 @@ h6 {
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+      display: block;
+      overflow: auto;
   }
   .masthead h1.big {
     font-size: 5.5rem;
