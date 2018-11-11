@@ -30,6 +30,9 @@ def handle_personality(q):
 		'wow': 'I know, right??'
 	}
 
+	if 'siri' in q:
+		return 'Siri and I are close friends, but we all know who\'s better.🤷‍♂️'
+
 	for personal_q in personal_questions:
 		if q.startswith(personal_q):
 			return personal_questions[personal_q]
