@@ -168,7 +168,8 @@
             $("#testquestionform").submit(function(event) {
                 $(".hidertq").hide();
                 $(".modal-footer").hide();
-                
+                $("#exampleModalLabel").text("Fetching...");
+
                 $("#showans").text("⌛ This won't take long...");
                 $("#displaymod").modal();
 
@@ -181,6 +182,7 @@
                       //console.log(xhttp.responseText);
                       $(".hidertq").show();
                       $(".modal-footer").show();
+                      $("#exampleModalLabel").text("We have an answer:");
 
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
