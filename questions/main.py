@@ -2,14 +2,29 @@
 google cloud function thingy
 '''
 
-# import wiki, wolf
+from responses import respond
 from twilio.twiml.messaging_response import MessagingResponse
+from twilio.rest import Client
+import re, os
+
+bot_num = os.environ['BOT_NUM']
+
+def command(s):
+	return ' '.join(s.split()[1:])
 
 
 def hello(request):
-	body = request.values.get('Body', None)
+	q = request.values.get('Body', None)
+	url = request.url
 	resp = MessagingResponse()
 
-	resp.message('Hello there. {}'.format(body))
+	for param in url.split('&'):
+		mat = re.search(r'From=%2B([\d\w]+)', param)
+		if mat:
+			from_num = '+{}'.format(mat.group(1))
+			break
 
+	answer = respond(q)
+	resp.message(answer)
 	return str(resp)
+
