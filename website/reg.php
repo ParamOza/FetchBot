@@ -7,26 +7,26 @@
 
     if($r['plan'] == 'pp'){
         echo prepStr($stringin);
-    } else if($r['plan'] == 'sub'){
-        //echo sub($stringin);
+    } else {
+        echo sub($stringin);
     }
 
     function prepStr($in){
         $f = '
                 <form class="w-75 mx-auto mt-3 p-3 light-bg" action="/doreg.php" method="post">
                     <input type="hidden" name="csrf" value="'.$_SESSION['tok'].'">
-                    
-                    <div class="form-group">
+
+                    <div class="form-group row">
                         <label>Phone Number </label>
                         <input class="form-control" type="text" name="phone" placeholder="1 (555)324-6172">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         <label>Email </label>
                         <input class="form-control" type="text" name="email" placeholder="user@web.com">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         <label>Password </label>
                         <input class="form-control" type="passsword" name="passwd">
                     </div>
