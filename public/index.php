@@ -143,7 +143,7 @@
         $(document).ready(function() {
             $("#testquestionform").submit(function() {
                 var xhttp = new XMLHttpRequest();
-                var req = $("#questionOutput").value;
+                var req = $("#questionOutput").val();
                 xhttp.open("GET", "/respond.php?q="+req, true);
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
