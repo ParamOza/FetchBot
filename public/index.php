@@ -131,6 +131,26 @@
       <i class="fas fa-angle-up h5"></i>
     </a>
 
+
+    <div class="modal fade" id="displaymod" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">We have an answer:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="showans"> </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -150,7 +170,9 @@
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
-                      console.log(xhttp.responseText);
+                      //console.log(xhttp.responseText);
+                      $("#showans").val(xttp.responseText);
+                      $("#displaymod").modal();
                     }
                 }
                 event.preventDefault();
