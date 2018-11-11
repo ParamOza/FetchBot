@@ -48,7 +48,7 @@
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
         <h1 class="mb-1 big">Admins Only</h1>
-        <h3>If you got here and you're not an Admin<br>good job hacking</h3>
+        <h2>If you got here and you're not an Admin<br>good job hacking</h2>
       </div>
       <div class="overlay"></div>
       <img src="img/dogLogo.png" class="dogimage" alt="doggo">
@@ -59,7 +59,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-              <form class="form-horizontal">
+              <form>
                 <fieldset>
                 <!-- Form Name -->
                 <legend>Admin Login</legend>
@@ -92,6 +92,15 @@
                         <input id="passwordinput" name="passwordinput" type="password" placeholder="placeholder" class="form-control input-md">
                     </div>
                 </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="submitButton"></label>
+                  <div class="col-md-4">
+                    <button id="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+
                 </fieldset>
             </form>
           </div>
