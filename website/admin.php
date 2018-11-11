@@ -64,18 +64,6 @@
                 <!-- Form Name -->
                 <legend>Admin Login</legend>
 
-                <!-- Prepended checkbox -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="prependedcheckbox">Are you an Admin?</label>
-                    <div class="col-md-4">
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                            <input   type="checkbox" checked="checked">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Text input-->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Username</label>
