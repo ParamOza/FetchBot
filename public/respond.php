@@ -25,5 +25,5 @@
 
     $resp = curl_exec($ch);
     curl_close($ch);
-    echo $resp.$_SESSION['askedalot'].$_SESSION['first'];
+    echo $resp;
  ?>
