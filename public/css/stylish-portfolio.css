@@ -398,3 +398,7 @@ a:hover, a:focus, a:active {
     margin-top: 13vh;
     margin-right: 8vw;
 }
+
+.innerNav{
+    background-color: #1D809F;
+}
