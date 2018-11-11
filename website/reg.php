@@ -15,7 +15,7 @@
         $f = '
                 <form class="w-75 mx-auto mt-3 p-3 light-bg text-light" action="/doreg.php" method="post">
                     <h4 class="mb-1 text-light display-4">Sign up for {Plan}</h4>
-                    <hr>
+                    <hr class="my-2 border-top border-light">
 
                     <input type="hidden" name="csrf" value="'.$_SESSION['tok'].'">
 
@@ -33,7 +33,7 @@
                         <label class="ml-auto mr-2">Password </label>
                         <input class="form-control col-6 ml-2 mr-auto" type="passsword" name="passwd">
                     </div>
-                    <hr>
+                    <hr class="my-2 border-top border-light">
                     <div class="form-group row my-2">
                         <button type="submit" class="btn-lg btn-info mx-auto">Register</button>
                     </div>
