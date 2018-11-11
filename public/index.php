@@ -150,7 +150,7 @@
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
-                      console.log(xhttp.getResponse()));
+                      console.log(xhttp.getResponse());
                     }
                 }
             });
