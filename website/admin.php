@@ -54,7 +54,7 @@
 
       </div>
       <div class="overlay"></div>
-      <img src="img/dogLogo.png" alt="doggo">
+      <img src="img/dogLogo.png" alt="doggo" height="100vh">
     </header>
 
     <!-- About -->
