@@ -77,6 +77,9 @@
             <p class="lead mb-5 font-weight-bold">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
 
           </div>
+          <div class="col-lg-10 mx-auto">
+            <h4 class="display-4">Text Fetch: +1 (574) 355-8881</h4>
+          </div>
         </div>
       </div>
     </section>
