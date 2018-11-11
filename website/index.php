@@ -67,8 +67,8 @@
 
     <!-- About -->
     <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
+      <div class="container text-center bg-doggie">
+        <div class="row light-bg p-2">
           <div class="col-lg-10 mx-auto">
             <h2>FetchBot.Dog is a custom search engine that answers all your questions.</h2>
             <p class="lead mb-5">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
@@ -89,7 +89,7 @@
 
     <!-- Call to Action -->
     <section class="content-section bg-primary text-white">
-      <div class="container text-center bg-doggie">
+      <div class="container text-center">
         <h2 class="mb-4">Choose a plan:</h2>
         <a href="reg.php?plan=pp" class="btn btn-xl btn-light mr-4">Prepaid</a>
         <a href="reg.php?plan=sub" class="btn btn-xl btn-dark">Annual Subscription</a>
