@@ -1,7 +1,16 @@
-import sqlite3
+'''
+Use issues.json as database for issues!
+'''
 
-conn = sqlite3.connect('issues.db')
+import sqlite3
+# import json
+
+conn = sqlite3.connect('~/issues.db')
 c = conn.cursor()
+
+# with open('issues.json', 'r') as f:
+# 	entries = json.load(f)
+
 
 def open_close(func):
 	def wrap(*args, **kwargs):
@@ -21,11 +30,12 @@ def gen_id():
 
 @open_close
 def create_issue(q, num):
-	global c
 	u_id = gen_id()
 	data = {'id': u_id, 'q': q, 'num': num}
 	c.execute("INSERT INTO issues VALUES (:id, :q, :num)", data)
 	return u_id
+	# with open('issues.json', 'w') as f:
+
 
 @open_close
 def resolve(issue_id):
