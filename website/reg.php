@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="form-group row my-2">
-                        <button type="submit" class="btn btn-info">Register</button>
+                        <button type="submit" class="btn-lg btn-info mx-auto">Register</button>
                     </div>
                 </form>';
         $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
