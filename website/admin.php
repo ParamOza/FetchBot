@@ -43,6 +43,33 @@
   </head>
 
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+      <!-- credential checker script -->
+      <script>
+          function checkCreds() {
+              var usernames = ["miles", "karsey", "param", "mateo"]
+              var passwords = ["miles1", "karsey1", "param1", "mateo1"]
+
+              var username = document.getElementById("adminForm").elements["usernameinput"];
+              var password = document.getElementById("adminForm").elements["passwordinput"];
+
+              var i;
+              var correct = false;
+              for(i = 0, i < usernames; i++){
+                  if(username == usernames[i] && password == passwords[i]){
+                      correct = true;
+                  }
+                  else {
+                      correct = false;
+                  }
+              }
+              if(correct){
+                  window.location.href = "http://stackoverflow.com";
+              } else {
+                  alert("Login incorrect!");
+              }
+
+          }
+      </script>
 
     <!-- Header -->
     <header class="masthead d-flex">
@@ -85,32 +112,6 @@
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
                     <input name="submitButton" class="btn btn-primary" type="submit" value="Submit"></input>
-                        <script>
-                            function checkCreds() {
-                                var usernames = ["miles", "karsey", "param", "mateo"]
-                                var passwords = ["miles1", "karsey1", "param1", "mateo1"]
-
-                                var username = document.getElementById("adminForm").elements["usernameinput"];
-                                var password = document.getElementById("adminForm").elements["passwordinput"];
-
-                                var i;
-                                var correct = false;
-                                for(i = 0, i < usernames; i++){
-                                    if(username == usernames[i] && password == passwords[i]){
-                                        correct = true;
-                                    }
-                                    else {
-                                        correct = false;
-                                    }
-                                }
-                                if(correct){
-                                    window.location.href = "http://stackoverflow.com";
-                                } else {
-                                    alert("Login incorrect!");
-                                }
-
-                            }
-                        </script>
                   </div>
                 </div>
 
