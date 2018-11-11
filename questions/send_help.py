@@ -23,8 +23,8 @@ def send_help(q, ask_num):
 	# enter new issue into issue.db
 	u_id = issues.create_issue(q, ask_num)
 
-	prompt = '#{}#\nSomeone asked this question: {}\nDo you know the answer?🐶'. \
-		.format(u_id, q)
+	prompt = '#{}#\nSomeone asked this question: {}\nDo you know the answer?🐶' \
+	.format(u_id, q)
 
 	for name, ad_num in admin.items():
 		message = client.messages.create(
