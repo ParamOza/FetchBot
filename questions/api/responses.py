@@ -53,3 +53,8 @@ def get_answer(q):
 		resp = 'I\'ll ask my friends if they know the answer. \
 			If they send me one, I\'ll send their response right away!🐶'
 	return resp
+
+
+def respond(q):
+	personal_q = handle_personality(q.lower())
+	return personal_q if personal_q else get_answer(q)
