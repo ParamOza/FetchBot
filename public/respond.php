@@ -9,7 +9,6 @@
     curl_setopt($ch, CURLOPT_FORBID_REUSE,true);
 
     $resp = curl_exec($ch);
-    var_dump(curl_getinfo($ch)); 
     curl_close($ch);
-
+    echo $resp;
  ?>
