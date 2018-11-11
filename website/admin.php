@@ -92,7 +92,8 @@
                                 document.getElementById("adminForm").elements["usernameinput"]
                                 document.getElementById("adminForm").elements["passwordinput"]
 
-                                window.location.href = "http://stackoverflow.com";
+                                //if the creds match
+                                window.location.replace("http://stackoverflow.com");
                             }
                         </script>
                   </div>
