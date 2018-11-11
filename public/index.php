@@ -137,8 +137,6 @@
         <div class="modal-content text-center">
           <div class="modal-header">
             <h5 class="modal-title display-4 mx-auto" id="exampleModalLabel">We have an answer:</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            </button>
           </div>
           <div class="modal-body">
               <i class="fas fa-quote-left hidertq"></i>
@@ -168,8 +166,9 @@
             $("#testquestionform").submit(function(event) {
                 $(".hidertq").hide();
                 $(".modal-footer").hide();
-                
-                $("#showans").text("⌛ This won't take long...");
+                $("#exampleModalLabel").text("Fetching...");
+
+                $("#showans").html("<span class=\"loading\">⌛</span> This won't take long...");
                 $("#displaymod").modal();
 
                 var xhttp = new XMLHttpRequest();
@@ -181,6 +180,7 @@
                       //console.log(xhttp.responseText);
                       $(".hidertq").show();
                       $(".modal-footer").show();
+                      $("#exampleModalLabel").text("We have an answer:");
 
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
