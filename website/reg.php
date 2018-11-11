@@ -19,7 +19,7 @@
                         <label>Email </label> <input type="text" name="email" placeholder="user@web.com">
                     </div>
                 </form>';
-        $in = str_replace('{Plan}', 'Prepaid Plan', $in);
+        $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
         $in = str_replace('{SignupForm}', $f, $in);
         return $in;
     }
