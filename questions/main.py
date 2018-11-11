@@ -8,7 +8,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
 from send_help import send_help
 import issues
-import re
+import re, os
 
 bot_num = '+15743558881'
 
@@ -63,14 +63,6 @@ def hello(request):
 			return str(resp)
 
 
-	# resp.message('couldn\'t find an answer for your question: "{}"' \
-	# 		.format(q))
-
-	# send_help(q, from_num)
-
-	# resp.message('I\'ll ask my friends if they know the answer. \
-	# 	If they send me one, I\'ll send their response right away!🐶')
-
 	ans = wolf.respond(q)
 	if not ans:
 		ans = wiki.search(q)
@@ -84,7 +76,6 @@ def hello(request):
 		resp.message('I\'ll ask my friends if they know the answer. \
 			If they send me one, I\'ll send their response right away!🐶')
 		# PLACE ISSUE IN DATABASE
-		# send_help(q, from_num)
 
 	return str(resp)
 
