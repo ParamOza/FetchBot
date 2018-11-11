@@ -48,10 +48,6 @@
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
         <h1 class="mb-1 big">Admins only if you got here good job at hacking</h1>
-        <h3 class="mb-5">
-        </h3>
-        <button type="submit" class="btn btn-xl btn-primary">Search</button>
-
       </div>
       <div class="overlay"></div>
       <img src="img/dogLogo.png" alt="doggo" height="100vh">
@@ -102,35 +98,9 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Choose a plan:</h2>
-        <a href="reg.php?plan=pp" class="btn btn-xl btn-light mr-4">Prepaid</a>
-        <a href="reg.php?plan=sub" class="btn btn-xl btn-dark">Annual Subscription</a>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
-              <i class="icon-social-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
-              <i class="icon-social-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white p-2" href="#">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
         <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
       </div>
     </footer>
