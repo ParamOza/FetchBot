@@ -140,8 +140,8 @@
     <script src="https://storage.googleapis.com/mh18-222116.appspot.com/js/stylish-portfolio.min.js"></script>
 
     <script>
-        $(document).ready(function {
-            $("#testquestionform").submit(function {
+        $(document).ready(function() {
+            $("#testquestionform").submit(function() {
                 var xhttp = new XMLHttpRequest();
                 var req = $("#questionOutput").value;
                 xhttp.open("GET", "/respond.php?q="+req, true);
