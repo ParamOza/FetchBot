@@ -142,6 +142,10 @@ h6 {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.bg-doggie {
+    background: url("/img/dogLogo.svg") no-repeat center;
+}
+
 .sidebar-nav {
   position: absolute;
   top: 0;

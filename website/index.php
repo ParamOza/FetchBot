@@ -89,7 +89,7 @@
 
     <!-- Call to Action -->
     <section class="content-section bg-primary text-white">
-      <div class="container text-center">
+      <div class="container text-center bg-doggie">
         <h2 class="mb-4">Choose a plan:</h2>
         <a href="reg.php?plan=pp" class="btn btn-xl btn-light mr-4">Prepaid</a>
         <a href="reg.php?plan=sub" class="btn btn-xl btn-dark">Annual Subscription</a>
