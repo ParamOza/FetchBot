@@ -171,7 +171,7 @@
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
                       //console.log(xhttp.responseText);
-                      $("#showans").val(xhttp.responseText);
+                      $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
                     }
                 }
