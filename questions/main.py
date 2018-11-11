@@ -30,13 +30,6 @@ def hello(request):
 
 	if q.lower() == 'what is love':
 		resp.message('Baby don\'t hurt me, no more..🐶')
-		# make a call and play the song
-		call = VoiceResponse()
-
-		call.say('Hello there... General Kenobi', voice='alice')
-		call.play('https://demo.twilio.com/docs/classic.mp3')
-
-		return str(call)
 
 
 	# "!ans The 1st element is Hydrogen."
