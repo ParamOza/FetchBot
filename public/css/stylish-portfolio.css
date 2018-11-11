@@ -151,7 +151,7 @@ h6 {
   top: 0;
   width: 250px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 8rem;
   list-style: none;
 }
 
@@ -386,4 +386,14 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.dogimage {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    height: 49vh;
+    margin-top: 13vh;
+    margin-right: 8vw;
 }

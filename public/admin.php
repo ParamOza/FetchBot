@@ -43,68 +43,88 @@
   </head>
 
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+      <!-- credential checker script -->
+      <script>
+          function checkCreds() {
+              var usernames = ["miles", "karsey", "param", "mateo"]
+              var passwords = ["miles1", "karsey1", "param1", "mateo1"]
+
+              var username = document.getElementById("adminForm").elements["usernameinput"];
+              var password = document.getElementById("adminForm").elements["passwordinput"];
+
+              var i;
+              var correct = false;
+              for(i = 0, i < usernames; i++){
+                  if(username == usernames[i] && password == passwords[i]){
+                      correct = true;
+                  }
+                  else {
+                      correct = false;
+                  }
+              }
+              if(correct){
+                  window.location.href = "http://stackoverflow.com";
+              } else {
+                  alert("Login incorrect!");
+              }
+
+          }
+      </script>
 
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1 big">Ask Me Anything</h1>
-        <h3 class="mb-5">
-            <form action="google.com">
-                <div class="form-group">
-                    <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput" aria-describedby="emailHelp" placeholder="Ask a question">
-                </div>
-                <button type="submit" class="btn btn-xl btn-primary">Search</button>
-
-            </form>
-        </h3>
-
+        <h1 class="mb-1 big">Admins Only</h1>
+        <h2>If you got here and you're not an Admin<br>good job hacking</h2>
       </div>
-      <div class="overlay">
-          <img src="img/dogLogo.png" class="dogimage" alt="doggo">
-      </div>
+      <div class="overlay"></div>
+      <img src="img/dogLogo.png" class="dogimage" alt="doggo">
     </header>
 
     <!-- About -->
     <section class="content-section bg-light" id="about">
-      <div class="container text-center">
+  <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>&lt;Website name here&gt; is a custom search engine that answers all your questions.</h2>
-            <p class="lead mb-5">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
+              <form onsubmit="checkCreds()" id="adminForm">
+                <fieldset>
+                <!-- Form Name -->
+                <legend>Admin Login</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Username</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="usernameinput" type="text" placeholder="username" class="form-control input-md">
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                    <div class="col-md-4">
+                        <input id="passwordinput" name="passwordinput" type="password" placeholder="password" class="form-control input-md">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="submitButton"></label>
+                  <div class="col-md-4">
+                    <input href="google.com" name="submitButton" class="btn btn-primary" type="submit" value="Submit"></input>
+                  </div>
+                </div>
+
+                </fieldset>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Choose a plan:</h2>
-        <a href="reg.php?plan=pp" class="btn btn-xl btn-light mr-4">Prepaid</a>
-        <a href="reg.php?plan=sub" class="btn btn-xl btn-dark">Annual Subscription</a>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
-              <i class="icon-social-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
-              <i class="icon-social-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white p-2" href="#">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
         <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
       </div>
     </footer>
