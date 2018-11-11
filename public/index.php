@@ -46,7 +46,7 @@
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
     <!-- Navigation -->
-    <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?>
+    <!-- <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?> -->
 
     <!-- Header -->
     <header class="masthead d-flex">
@@ -63,7 +63,9 @@
 
 
       </div>
-      <div class="overlay"></div>
+      <div class="overlay">
+          <img src="img/dogLogo.png" class="dogimage" alt="doggo">
+      </div>
     </header>
 
     <!-- About -->
