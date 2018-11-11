@@ -105,17 +105,17 @@
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
+            <a class="social-link rounded-circle text-white mr-3 p-2" href="https://www.facebook.com/MadHacksUW/">
               <i class="icon-social-facebook"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3 p-2" href="#">
+            <a class="social-link rounded-circle text-white mr-3 p-2" href="https://twitter.com/MadHacksUW">
               <i class="icon-social-twitter"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white p-2" href="#">
+            <a class="social-link rounded-circle text-white p-2" href="https://github.com/ParamOza/MHS-MadHacks2018">
               <i class="icon-social-github"></i>
             </a>
           </li>
