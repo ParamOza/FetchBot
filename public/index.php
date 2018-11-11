@@ -167,7 +167,7 @@
     <script>
         $(document).ready(function() {
             var phs = Array('What is love?', 'Bitcoin price in USD', 'Yen to USD', 'USD to GBP', 'The Wizard of Oz', 'How many breeds of dogs are there?');
-            var ph = phs[Math.floor(Math.random()*items.length)];
+            var ph = phs[Math.floor(Math.random()*phs.length)];
             $("#questionOutput").attr('placeholder',ph);
 
             $("#testquestionform").submit(function(event) {
