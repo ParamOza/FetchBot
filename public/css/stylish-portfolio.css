@@ -144,7 +144,7 @@ h6 {
 }
 
 .bg-doggie {
-    background: url("/img/dogLogo.svg") no-repeat center;
+    /*background: url("/img/dogLogo.svg") no-repeat center;*/
 }
 
 .sidebar-nav {
