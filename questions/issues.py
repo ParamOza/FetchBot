@@ -1,5 +1,8 @@
 import sqlite3
 
+conn = sqlite3.connect('issues.db')
+c = conn.cursor()
+
 def open_close(func):
 	def wrap(*args, **kwargs):
 		global c
@@ -7,7 +10,7 @@ def open_close(func):
 		c = conn.cursor()
 		res = func(*args, **kwargs)
 		conn.commit()
-		conn.close()
+		# conn.close()
 		return res
 	return wrap
 
@@ -26,18 +29,19 @@ def create_issue(q, num):
 
 @open_close
 def resolve(issue_id):
-	try:
-		entry = find(issue_id)
-		c.execute("DELETE FROM issues WHERE id='{}'".format(issue_id))
-		return entry
-	except: return 
+	entry = find(issue_id)
+	c.execute("DELETE FROM issues WHERE id='{}'".format(issue_id))
+	print(entry)
+	return entry
 
 @open_close
 def find(u_id):
 	global c
 	c.execute("SELECT * FROM issues WHERE id='{}'".format(u_id))
-	# c.execute("SELECT * FROM issues WHERE num='+16083382666'")
 	return c.fetchone()
+
+# conn.commit()
+# conn.close()
 
 
 if __name__ == '__main__':
