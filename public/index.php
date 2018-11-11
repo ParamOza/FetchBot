@@ -141,7 +141,15 @@
     <script>
         $(document).ready(function {
             $("#testquestionform").submit(function {
-
+                var xhttp = new XMLHttpRequest();
+                var req = $("#questionOutput").value;
+                xhttp.open("GET", "/respond.php?q="+req, true);
+                xhttp.send();
+                xhttp.onreadystatechange = function() {
+                    if(this.readyState == this.DONE) {
+                      console.log(xhttp.getResponse()));
+                    }
+                }
             });
         });
     </script>
