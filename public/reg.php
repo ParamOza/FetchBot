@@ -1,6 +1,6 @@
 <?php
     $r = $_REQUEST;
-    $stringin = file_get_contents("//pagefillins/register.html");
+    $stringin = file_get_contents(getcwd()."/pagefillins/register.html");
 
     $csrf_tok = bin2hex(random_bytes(32));
     $_SESSION['tok'] = $csrf_tok;
