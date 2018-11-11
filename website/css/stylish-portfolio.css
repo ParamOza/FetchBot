@@ -94,6 +94,7 @@ h6 {
   position: relative;
   width: 100%;
   padding-top: 8rem;
+  padding-bottom: 8rem;
   background: -webkit-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   background-position: center center;
@@ -393,5 +394,6 @@ a:hover, a:focus, a:active {
     padding-bottom: 0px;
     padding-left: 0px;
     height: 49vh;
-    margin-top: 20vh;
+    margin-top: 13vh;
+    margin-right: 8vw;
 }
