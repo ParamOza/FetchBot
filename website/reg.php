@@ -40,7 +40,7 @@
                         <button type="submit" class="btn-lg btn-info mx-auto">Register</button>
                     </div>
                 </form>';
-        $men = file_get_contents(getcwd()."/pagefillins/register.html");
+        $men = file_get_contents(getcwd()."/pagefillins/menu.html");
         $in = str_replace('{SignupForm}', $f, $in);
         $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
         $in = str_replace('{Menu}', $men, $in);
