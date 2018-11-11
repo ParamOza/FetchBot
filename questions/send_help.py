@@ -20,7 +20,7 @@ admin = [
 client = Client(os.environ['TWILIO_ACCOUNT_SID'], os.environ['TWILIO_AUTH_TOKEN'])
 
 def send_help(q, ask_num):
-	# enter new issue into issue.db
+	# UPDATE DATABASE
 	u_id = issues.create_issue(q, ask_num)
 
 	prompt = '#{}#\nSomeone asked this question: {}\nDo you know the answer?🐶' \
