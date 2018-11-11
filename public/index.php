@@ -171,7 +171,7 @@
                 $(".modal-footer").hide();
                 $("#exampleModalLabel").text("Fetching...");
 
-                $("#showans").html("<span class=\"loading\">⌛</span> This won't take long...");
+                $("#showans").html("<span id=\"loading\">⌛</span> This won't take long...");
                 $("#displaymod").modal();
 
                 var xhttp = new XMLHttpRequest();
