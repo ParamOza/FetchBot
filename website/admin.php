@@ -84,7 +84,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
-                    <button id="submitButton" name="submitButton" class="btn btn-primary" type="submit" value="Submit">Submit</button>
+                    <input name="submitButton" class="btn btn-primary" type="submit" value="Submit">Submit</input>
                         <script>
                             function checkCreds() {
                                 var usernamePassword= ["miles", "admin0","param","admin1","karsey","admin2","mateo","admin3"];
