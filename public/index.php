@@ -7,7 +7,7 @@
     <title>Fetch Bot</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://storage.googleapis.com/mh18-222116.appspot.com/img/favicon.ico" type="image/x-icon" />
 <!--
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -28,16 +28,16 @@
     <meta name="theme-color" content="#ffffff"> -->
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/css/stylish-portfolio.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=.85">
 
@@ -46,7 +46,7 @@
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
 
     <!-- Navigation -->
-    <?php echo file_get_contents(getcwd()."/pagefillins/menu.html"); ?>
+    <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?>
 
     <!-- Header -->
     <header class="masthead d-flex">
