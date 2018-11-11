@@ -22,13 +22,13 @@
                     </div>
 
                     <div class="form-group row">
-                        <label>Email </label>
-                        <input class="form-control" type="text" name="email" placeholder="user@web.com">
+                        <label class="ml-auto mr-2">Email </label>
+                        <input class="form-control col-6 ml-2 mr-auto" type="text" name="email" placeholder="user@web.com">
                     </div>
 
                     <div class="form-group row">
-                        <label>Password </label>
-                        <input class="form-control" type="passsword" name="passwd">
+                        <label class="ml-auto mr-2">Password </label>
+                        <input class="form-control col-6 ml-2 mr-auto" type="passsword" name="passwd">
                     </div>
                 </form>';
         $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
