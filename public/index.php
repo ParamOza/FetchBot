@@ -141,7 +141,11 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" id="showans"> </div>
+          <div class="modal-body">
+              <i class="fas fa-quote-left"></i>
+              <span id="showans"></span>
+              <i class="fas fa-quote-right"></i>
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
