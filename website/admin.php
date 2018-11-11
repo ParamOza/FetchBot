@@ -72,7 +72,6 @@
                             <span class="input-group-addon">
                             <input   type="checkbox" checked="checked">
                             </span>
-                            <input id="prependedcheckbox" name="prependedcheckbox" class="form-control" type="text" placeholder="placeholder">
                         </div>
                     </div>
                 </div>
@@ -98,6 +97,7 @@
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
                     <button id="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
+                    <script>function(submit)<script>
                   </div>
                 </div>
 
