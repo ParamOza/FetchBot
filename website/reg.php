@@ -15,7 +15,7 @@
         $f = '
                 <form class="w-75 mx-auto mt-3 p-3 light-bg text-light" action="/doreg.php" method="post">
                     <h4 class="mb-1 text-light display-4">Sign up for {Plan}</h4>
-                    
+
                     <hr class="w-50 my-3 border-top border-light">
 
                     <input type="hidden" name="csrf" value="'.$_SESSION['tok'].'">
@@ -39,8 +39,9 @@
                         <button type="submit" class="btn-lg btn-info mx-auto">Register</button>
                     </div>
                 </form>';
-        $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
+                
         $in = str_replace('{SignupForm}', $f, $in);
+        $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
         return $in;
     }
 
