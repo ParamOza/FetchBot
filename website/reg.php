@@ -6,15 +6,16 @@
     $_SESSION['tok'] = $csrf_tok;
 
     if($r['plan'] == 'pp'){
-        echo prep($stringin);
+        echo prepStr($stringin);
     } else if($r['plan'] == 'sub'){
         //echo sub($stringin);
     }
 
-    function prep($in){
+    function prepStr($in){
         $f = '
                 <form class="w-75 mx-auto light-bg" action="/doreg.php" method="post">
                     <div class="form-group">
+                        <input type="hidden" name="csrf" value="'.$_SESSION['tok'].'">
                         <label>Email </label> <input type="text" name="email" placeholder="user@web.com">
                     </div>
                 </form>';
