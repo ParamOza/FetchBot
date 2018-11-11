@@ -141,9 +141,9 @@
             </button>
           </div>
           <div class="modal-body">
-              <i class="fas fa-quote-left"></i>
+              <i class="fas fa-quote-left hidertq"></i>
               <span id="showans"></span>
-              <i class="fas fa-quote-right"></i>
+              <i class="fas fa-quote-right hidertq"></i>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn-lg btn-secondary mx-auto" data-dismiss="modal">Close</button>
@@ -166,6 +166,7 @@
     <script>
         $(document).ready(function() {
             $("#testquestionform").submit(function(event) {
+                $(".hidertq").hide();
                 $("#showans").text("⌛ This won't take long...");
                 $("#displaymod").modal();
 
@@ -176,6 +177,7 @@
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
                       //console.log(xhttp.responseText);
+                      $(".hidertq").show();
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
                     }
