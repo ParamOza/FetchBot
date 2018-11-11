@@ -399,6 +399,13 @@ a:hover, a:focus, a:active {
     margin-right: 8vw;
 }
 
+#loading{
+    animation-iteration-count:infinite;
+   -webkit-animation:loadingAnim 1s linear infinite;
+   -moz-animation:loadingAnim 1s linear infinite;
+   animation:loadingAnim 1s linear infinite;
+}
+
 @-moz-keyframes loadingAnim {
     100% { -moz-transform: rotate(360deg); }
     50% { -moz-transform: rotate(180deg); }
@@ -413,11 +420,4 @@ a:hover, a:focus, a:active {
     100% { -webkit-transform: rotate(360deg); }
     50% { -webkit-transform: rotate(180deg); }
     0% { -webkit-transform: rotate(0deg); }
- }
-
- .loading{
-     animation-iteration-count:infinite;
-    -webkit-animation:loadingAnim 1s linear infinite;
-    -moz-animation:loadingAnim 1s linear infinite;
-    animation:loadingAnim 1s linear infinite;
  }
