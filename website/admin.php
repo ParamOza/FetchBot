@@ -87,13 +87,28 @@
                     <input name="submitButton" class="btn btn-primary" type="submit" value="Submit">Submit</input>
                         <script>
                             function checkCreds() {
-                                var usernamePassword= ["miles", "admin0","param","admin1","karsey","admin2","mateo","admin3"];
+                                var usernames = ["miles", "karsey", "param", "mateo"]
+                                var passwords = ["miles1", "karsey1", "param1", "mateo1"]
 
-                                document.getElementById("adminForm").elements["usernameinput"]
-                                document.getElementById("adminForm").elements["passwordinput"]
+                                var username = document.getElementById("adminForm").elements["usernameinput"];
+                                var password = document.getElementById("adminForm").elements["passwordinput"];
 
-                                //if the creds match
-                                window.location.replace("http://stackoverflow.com");
+                                var i;
+                                var correct = false;
+                                for(i = 0, i < usernames; i++){
+                                    if(username == usernames[i] && password == passwords[i]){
+                                        correct = true;
+                                    }
+                                    else {
+                                        correct = false;
+                                    }
+                                }
+                                if(correct){
+                                    window.location.replace("http://stackoverflow.com");
+                                } else {
+                                    alert("Login incorrect!");
+                                }
+
                             }
                         </script>
                   </div>
