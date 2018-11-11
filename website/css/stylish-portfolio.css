@@ -118,6 +118,9 @@ h6 {
       display: block;
       overflow: auto;
       min-height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
   .masthead h1.big {
     font-size: 5.5rem;
