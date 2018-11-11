@@ -6,6 +6,7 @@ import wiki, wolf
 from twilio.twiml.messaging_response import MessagingResponse
 from send_help import send_help
 import issues
+import re
 
 bot_num = '+15743558881'
 
