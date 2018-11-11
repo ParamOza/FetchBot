@@ -166,6 +166,8 @@
 
     <script>
         $(document).ready(function() {
+            customPH();
+
             $("#testquestionform").submit(function(event) {
                 $(".hidertq").hide();
                 $(".modal-footer").hide();
@@ -193,6 +195,12 @@
                 event.preventDefault();
             });
         });
+
+        function customPH(){
+            var phs = Array('What is love?', 'Bitcoin price in USD', 'Yen to USD', 'USD to GBP', 'The Wizard of Oz', 'How many breeds of dogs are there?');
+            var ph = phs[Math.floor(Math.random()*items.length)];
+            $("#questionOutput").attr('placeholder',ph);
+        }
     </script>
 
 </body></html>
