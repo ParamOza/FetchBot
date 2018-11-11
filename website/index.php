@@ -39,7 +39,7 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=.7">
+    <meta name="viewport" content="width=device-width, initial-scale=.85">
 
   </head>
 
