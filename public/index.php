@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mateo Silver, Karsey Renfert, Param Oza, Miles Boswell">
 
-    <title>Fetch Bot</title>
+    <title>Home - FetchBot.Dog</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://storage.googleapis.com/mh18-222116.appspot.com/img/favicon.ico" type="image/x-icon" />
@@ -46,7 +46,7 @@
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
     <!-- Navigation -->
-    <!-- <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?> -->
+    <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?>
 
     <!-- Header -->
     <header class="masthead d-flex">
@@ -55,7 +55,7 @@
         <h3 class="mb-5">
             <form id="testquestionform">
                 <div class="form-group">
-                    <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput">
+                    <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput">
                     <button type="submit" class="btn btn-xl btn-primary">Search</button>
                 </div>
             </form>
@@ -64,7 +64,7 @@
 
       </div>
       <div class="overlay">
-          <!--  -->
+          <img src="/img/dogLogo.png" class="dogImage">
       </div>
     </header>
 
@@ -143,17 +143,18 @@
 
     <script>
         $(document).ready(function() {
-            $("#testquestionform").submit(function() {
+            $("#testquestionform").submit(function(event) {
                 var xhttp = new XMLHttpRequest();
                 var req = $("#questionOutput").val();
                 xhttp.open("GET", "/respond.php?q="+req, true);
                 xhttp.send();
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
-                      console.log(xhttp.getResponse());
+                      console.log(xhttp.responseText);
                     }
                 }
             });
+            event.preventDefault();
         });
     </script>
 
