@@ -23,7 +23,7 @@ def handle_personality(q):
 	if 'tootsie pop' in q and 'licks' in q:
 		return 'At least a lot.'
 
-	if 'where are we going' == q:
+	if q.startswith('where are we going'):
 		return 'Flavortown, baby!'
 
 	if 'siri' in q:
