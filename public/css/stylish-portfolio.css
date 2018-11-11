@@ -417,7 +417,7 @@ a:hover, a:focus, a:active {
 
  .loading{
      animation-iteration-count:infinite;
-    -webkit-animation:loadingAnim 4s linear infinite;
-    -moz-animation:loadingAnim 4s linear infinite;
-    animation:loadingAnim 4s linear infinite;
+    -webkit-animation:loadingAnim 1s linear infinite;
+    -moz-animation:loadingAnim 1s linear infinite;
+    animation:loadingAnim 1s linear infinite;
  }
