@@ -87,7 +87,8 @@
                     <button id="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
                         <script>
                             function checkCreds() {
-                                alert("The form was submitted");
+                                var url= "google.com"; 
+                                window.location = url;
                             }
                         </script>
                   </div>
