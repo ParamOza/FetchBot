@@ -83,7 +83,7 @@
 
     <!-- About -->
     <section class="content-section bg-light" id="about">
-      <div class="container text-center">
+  <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
               <form onsubmit="checkCreds()" id="adminForm">
@@ -111,7 +111,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
-                    <input name="submitButton" class="btn btn-primary" type="submit" value="Submit"></input>
+                    <input href="google.com" name="submitButton" class="btn btn-primary" type="submit" value="Submit"></input>
                   </div>
                 </div>
 
