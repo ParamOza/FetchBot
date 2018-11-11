@@ -73,7 +73,7 @@
       <div class="container text-center">
         <div class="row p-2">
           <div class="col-lg-10 mx-auto">
-            <h2>FetchBot.Dog is a custom search engine that answers all your questions.</h2>
+            <h2>FetchBot is a custom search engine that answers all your questions.</h2>
             <p class="lead mb-5 font-weight-bold">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
 
           </div>
@@ -122,7 +122,7 @@
             </a>
           </li>
         </ul>
-        <p class="text-muted small mb-0">Copyright © Your Website 2018</p>
+        <p class="text-muted small mb-0">Copyright © Fetchbot.dog 2018</p>
       </div>
     </footer>
 
