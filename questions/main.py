@@ -31,6 +31,7 @@ def hello(request):
 
 	if q.lower() == 'what is love':
 		resp.message('Baby don\'t hurt me, no more..🐶')
+		return str(resp)
 
 
 	# "!ans The 1st element is Hydrogen."
