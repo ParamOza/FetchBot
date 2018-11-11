@@ -5,7 +5,10 @@ Use issues.json as database for issues!
 import sqlite3
 # import json
 
-conn = sqlite3.connect('~/issues.db')
+try:
+	conn = sqlite3.connect('/home/marvelman500/issues.db')
+except:
+	conn = sqlite3.connect('issues.db')
 c = conn.cursor()
 
 # with open('issues.json', 'r') as f:
