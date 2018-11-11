@@ -41,7 +41,7 @@
                     </div>
                 </form>';
 
-        $in = str_replace('{SignupForm}', $f, $in);
+        $in = str_replace('{SignupForm}', $f , $in);
         $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
         $in = str_replace('{Menu}', file_get_contents(getcwd()."/pagefillins/register.html"), $in);
         return $in;
