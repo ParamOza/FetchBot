@@ -13,12 +13,12 @@
 
     function prepStr($in){
         $f = '
-                <form class="w-75 mx-auto mt-3 p-3 light-bg" action="/doreg.php" method="post">
+                <form class="w-75 mx-auto mt-3 p-3 light-bg text-light" action="/doreg.php" method="post">
                     <input type="hidden" name="csrf" value="'.$_SESSION['tok'].'">
 
                     <div class="form-group row">
-                        <label>Phone Number </label>
-                        <input class="form-control" type="text" name="phone" placeholder="1 (555)324-6172">
+                        <label class="ml-auto mr-2">Phone Number </label>
+                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="phone" placeholder="1 (555)324-6172">
                     </div>
 
                     <div class="form-group row">
