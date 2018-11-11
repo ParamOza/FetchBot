@@ -5,6 +5,9 @@
     $csrf_tok = bin2hex(random_bytes(32));
     $_SESSION['tok'] = $csrf_tok;
 
+    $men = file_get_contents(getcwd()."/pagefillins/menu.html");
+    $stringin = str_replace('{Menu}', $men, $stringin);
+
     if($r['plan'] == 'pp'){
         echo prep($stringin);
     } else {
@@ -40,10 +43,8 @@
                         <button type="submit" class="btn-lg btn-info mx-auto">Register</button>
                     </div>
                 </form>';
-        $men = file_get_contents(getcwd()."/pagefillins/menu.html");
         $in = str_replace('{SignupForm}', $f, $in);
         $in = str_replace('{Plan}', 'a Prepaid Plan', $in);
-        $in = str_replace('{Menu}', $men, $in);
         return $in;
     }
 
