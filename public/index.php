@@ -1,13 +1,14 @@
 <html lang="en" class="gr__blackrockdigital_github_io"><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mateo Silver, Karsey Renfert, Param Oza, Miles Boswell">
 
     <title>Fetch Bot</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="https://storage.googleapis.com/mh18-222116.appspot.com/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <!--
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -28,64 +29,75 @@
     <meta name="theme-color" content="#ffffff"> -->
 
     <!-- Bootstrap Core CSS -->
-    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="https://storage.googleapis.com/mh18-222116.appspot.com/css/stylish-portfolio.css" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=.85">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
-    <!-- Navigation -->
-    <?php echo file_get_contents("https://storage.googleapis.com/mh18-222116.appspot.com/pagefillins/menu.html"); ?>
-
+    <!-- Modal Codel -->
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Answer</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>The answer is </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
         <h1 class="mb-1 big">Ask Me Anything</h1>
         <h3 class="mb-5">
+<<<<<<< HEAD
             <form id="testquestionform">
+=======
+            <form onsubmit="('#myModal').modal('show')" action="google.com" >
+>>>>>>> b6a8e8121241903a0d85b02a74d2fad418515077
                 <div class="form-group">
                     <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput">
                 </div>
+                <button type="submit" class="btn btn-xl btn-primary">Search</button>
+
             </form>
         </h3>
-        <button type="submit" class="btn btn-xl btn-primary">Search</button>
 
       </div>
-      <div class="overlay"></div>
+      <div class="overlay">
+          <img src="img/dogLogo.png" class="dogimage" alt="doggo">
+      </div>
     </header>
 
     <!-- About -->
-    <section class="content-section bg-light bg-doggie" id="about">
+    <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <div class="row light-bg p-2">
+        <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>FetchBot.Dog is a custom search engine that answers all your questions.</h2>
-            <p class="lead mb-5 font-weight-bold">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
-
+            <h2>&lt;Website name here&gt; is a custom search engine that answers all your questions.</h2>
+            <p class="lead mb-5">Created By:<a href="https://github.com/Mateo-S/"> Mateo Silver, <a href="https://github.com/bm20894"> Miles Boswell,<a href="https://github.com/karseyr"> Karsey Renfert,<a href="https://github.com/ParamOza/"> and Param Oza</a></a></a></a>!</p>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
 
     <!-- Call to Action -->
     <section class="content-section bg-primary text-white">
@@ -95,9 +107,6 @@
         <a href="reg.php?plan=sub" class="btn btn-xl btn-dark">Annual Subscription</a>
       </div>
     </section>
-
-
-
 
     <!-- Footer -->
     <footer class="footer text-center">
@@ -129,13 +138,14 @@
     </a>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/jquery/jquery.min.js"></script>
-    <script src="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://storage.googleapis.com/mh18-222116.appspot.com/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
+<<<<<<< HEAD
     <script src="https://storage.googleapis.com/mh18-222116.appspot.com/js/stylish-portfolio.min.js"></script>
 
     <script>
@@ -145,5 +155,8 @@
             });
         });
     </script>
+=======
+    <script src="js/stylish-portfolio.min.js"></script>
+>>>>>>> b6a8e8121241903a0d85b02a74d2fad418515077
 
 </body></html>
