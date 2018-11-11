@@ -55,7 +55,7 @@
         <h3 class="mb-5">
             <form id="testquestionform">
                 <div class="form-group">
-                    <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput">
+                    <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput" placeholder="Ask a question.">
                     <button type="submit" class="btn btn-xl btn-primary">Search</button>
                 </div>
             </form>
@@ -137,13 +137,11 @@
         <div class="modal-content text-center">
           <div class="modal-header">
             <h5 class="modal-title display-4 mx-auto" id="exampleModalLabel">We have an answer:</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            </button>
           </div>
           <div class="modal-body">
-              <i class="fas fa-quote-left"></i>
+              <i class="fas fa-quote-left hidertq"></i>
               <span id="showans"></span>
-              <i class="fas fa-quote-right"></i>
+              <i class="fas fa-quote-right hidertq"></i>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn-lg btn-secondary mx-auto" data-dismiss="modal">Close</button>
@@ -166,6 +164,13 @@
     <script>
         $(document).ready(function() {
             $("#testquestionform").submit(function(event) {
+                $(".hidertq").hide();
+                $(".modal-footer").hide();
+                $("#exampleModalLabel").text("Fetching...");
+
+                $("#showans").html("<span class=\"loading\">⌛</span> This won't take long...");
+                $("#displaymod").modal();
+
                 var xhttp = new XMLHttpRequest();
                 var req = $("#questionOutput").val();
                 xhttp.open("GET", "/respond.php?q="+req, true);
@@ -173,6 +178,10 @@
                 xhttp.onreadystatechange = function() {
                     if(this.readyState == this.DONE) {
                       //console.log(xhttp.responseText);
+                      $(".hidertq").show();
+                      $(".modal-footer").show();
+                      $("#exampleModalLabel").text("We have an answer:");
+
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
                     }

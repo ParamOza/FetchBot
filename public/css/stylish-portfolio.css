@@ -144,7 +144,7 @@ h6 {
 }
 
 .bg-doggie {
-    /* background: url("/img/dogLogo.svg") no-repeat center; */
+    /*background: url("/img/dogLogo.svg") no-repeat center;*/
 }
 
 .sidebar-nav {
@@ -176,7 +176,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: #1D809F;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -398,3 +398,19 @@ a:hover, a:focus, a:active {
     margin-top: 13vh;
     margin-right: 8vw;
 }
+
+@-moz-keyframes loadingAnim {
+    100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes loadingAnim {
+     100% { -webkit-transform: rotate(360deg); }
+ }
+@keyframes loadingAnim {
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+ }
+
+ .loading{
+    -webkit-animation:loadingAnim 4s linear infinite;
+    -moz-animation:loadingAnim 4s linear infinite;
+    animation:loadingAnim 4s linear infinite;
+ }
