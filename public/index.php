@@ -184,6 +184,7 @@
 
                       $("#showans").text(xhttp.responseText);
                       $("#displaymod").modal();
+                      $("#questionOutput").val("");
                     }
                 }
                 event.preventDefault();
