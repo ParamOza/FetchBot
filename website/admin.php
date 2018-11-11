@@ -84,7 +84,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="submitButton"></label>
                   <div class="col-md-4">
-                    <input type="submit" value="Submit"></input>
+                    <input name="submitButton" class="btn btn-primary" type="submit" value="Submit"></input>
                         <script>
                             function checkCreds() {
                                 var usernames = ["miles", "karsey", "param", "mateo"]
@@ -104,7 +104,7 @@
                                     }
                                 }
                                 if(correct){
-                                    window.location.replace("http://stackoverflow.com");
+                                    window.location.href = "http://stackoverflow.com";
                                 } else {
                                     alert("Login incorrect!");
                                 }
