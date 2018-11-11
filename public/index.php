@@ -46,7 +46,7 @@
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
 
     <!-- Navigation -->
-    <?php echo file_get_contents("/pagefillins/menu.html"); ?>
+    <?php echo file_get_contents(getcwd()."/pagefillins/menu.html"); ?>
 
     <!-- Header -->
     <header class="masthead d-flex">
