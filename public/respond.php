@@ -13,7 +13,7 @@
     if($_SESSION['askedalot'] > 6){
         echo 'Calm down.  Only 6 questions per 10 minutes allowed on the website!';
         exit;
-    }echo $_SESSION['askedalot'];
+    }
 
     $r = urlencode($_REQUEST['q']);
     $ch = curl_init();
@@ -25,5 +25,5 @@
 
     $resp = curl_exec($ch);
     curl_close($ch);
-    echo $resp;
+    echo $resp.$_SESSION['askedalot'].$_SESSION['first'];
  ?>
