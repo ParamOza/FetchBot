@@ -53,9 +53,9 @@
       <div class="container text-center my-auto">
         <h1 class="mb-1 big">Ask Me Anything</h1>
         <h3 class="mb-5">
-            <form>
+            <form id="testquestionform">
                 <div class="form-group">
-                    <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput" aria-describedby="emailHelp" placeholder="Ask a question">
+                    <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput">
                 </div>
             </form>
         </h3>
@@ -138,7 +138,12 @@
     <!-- Custom scripts for this template -->
     <script src="https://storage.googleapis.com/mh18-222116.appspot.com/js/stylish-portfolio.min.js"></script>
 
+    <script>
+        $(document).ready(function {
+            $("#testquestionform").submit(function {
 
-
+            });
+        });
+    </script>
 
 </body></html>
