@@ -103,21 +103,21 @@ h6 {
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  /*font-size: 4rem;*/
   font-family: 'Nanum Gothic', sans-serif;
   color: #fdfdfd;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .masthead {
     height: 100vh;
   }
   .masthead h1 {
     font-size: 5.5rem;
   }
-}
+}*/
 
 /* Side Menu */
 #sidebar-wrapper {
