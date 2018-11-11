@@ -4,7 +4,8 @@ google cloud function thingy
 
 import wiki, wolf
 from twilio.twiml.messaging_response import MessagingResponse
-from twilio.twiml.voice_response import VoiceResponse
+# from twilio.twiml.voice_response import VoiceResponse
+from twilio.rest import Client
 from send_help import send_help
 import issues
 import re
