@@ -50,7 +50,7 @@
         <h1 class="mb-1 big">Admins only if you got here good job at hacking</h1>
       </div>
       <div class="overlay"></div>
-      <img src="img/dogLogo.png" alt="doggo" height="100vh">
+      <img src="img/dogLogo.png" class="dogimage" alt="doggo">
     </header>
 
     <!-- About -->
