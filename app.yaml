@@ -1,0 +1,8 @@
+runtime: php72
+
+handlers:
+# Serve php scripts.
+- url: /public/index.php
+  script: auto
+- url: /public/reg.php
+  script: auto
