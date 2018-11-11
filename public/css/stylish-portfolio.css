@@ -176,7 +176,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: #1D809F;
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -397,8 +397,4 @@ a:hover, a:focus, a:active {
     height: 49vh;
     margin-top: 13vh;
     margin-right: 8vw;
-}
-
-.innerNav{
-    background-color: #1D809F;
 }
