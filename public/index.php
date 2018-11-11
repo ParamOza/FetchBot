@@ -166,6 +166,9 @@
     <script>
         $(document).ready(function() {
             $("#testquestionform").submit(function(event) {
+                $("#showans").text("⌛ This won't take long...");
+                $("#displaymod").modal();
+
                 var xhttp = new XMLHttpRequest();
                 var req = $("#questionOutput").val();
                 xhttp.open("GET", "/respond.php?q="+req, true);
