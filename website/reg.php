@@ -23,7 +23,7 @@
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Phone Number </label>
-                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="phone" placeholder="1 (555)324-6172">
+                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="phone" placeholder="1 (555) 324-6172">
                     </div>
 
                     <div class="form-group row my-3">
@@ -58,7 +58,7 @@
 
                     <div class="form-group row my-2">
                         <label class="ml-auto mr-2">Phone Number </label>
-                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="phone" placeholder="1 (555)324-6172">
+                        <input class="form-control col-5 ml-2 mr-auto" type="text" name="phone" placeholder="1 (555) 324-6172">
                     </div>
 
                     <div class="form-group row my-3">
