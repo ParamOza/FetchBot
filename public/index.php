@@ -56,10 +56,11 @@
             <form id="testquestionform">
                 <div class="form-group">
                     <input type="question" class="form-control form-control-lg w-75 mx-auto" id="questionOutput">
+                    <button type="submit" class="btn btn-xl btn-primary">Search</button>
                 </div>
             </form>
         </h3>
-        <button type="submit" class="btn btn-xl btn-primary">Search</button>
+
 
       </div>
       <div class="overlay"></div>
