@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mateo Silver, Karsey Renfert, Param Oza, Miles Boswell">
 
-    <title>Home - FetchBot.Dog</title>
+    <title>Home - FetchBot</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
