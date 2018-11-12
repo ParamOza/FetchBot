@@ -196,6 +196,13 @@
                 }
                 event.preventDefault();
             });
+
+            $("#questionOutput").keypress(function(event) {
+              if (event.which == 13) {
+                  $("#testquestionform").submit();
+                 event.preventDefault();
+             }
+            });
         });
 
     </script>
