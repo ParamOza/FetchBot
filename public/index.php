@@ -56,7 +56,7 @@
             <form id="testquestionform">
                 <div class="form-group">
                     <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput">
-                    <button type="submit" class="btn btn-xl btn-primary">Search</button>
+                    <button type="submit" class="btn btn-xl btn-primary">Fetch</button>
                 </div>
             </form>
         </h3>
