@@ -59,7 +59,7 @@
         <h3 class="mb-5">
             <form id="testquestionform">
                 <div class="form-group">
-                    <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput">
+                    <input type="question" class="form-control form-control-lg w-75 mx-auto my-3" id="questionOutput" placeholder="">
                     <button type="submit" class="btn btn-xl btn-primary">Fetch</button>
                 </div>
             </form>
