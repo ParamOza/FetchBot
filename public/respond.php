@@ -10,8 +10,8 @@
     if(($_SESSION['first'] - time()) < 0){
         $_SESSION['askedalot'] = 1; // Whatever.
     }
-    if($_SESSION['askedalot'] > 6){
-        echo 'Calm down.  Only 6 questions per 10 minutes allowed on the website!';
+    if($_SESSION['askedalot'] > 100){
+        echo 'Calm down.  Only 100 questions per 10 minutes allowed on the website!';
         exit;
     }
 
