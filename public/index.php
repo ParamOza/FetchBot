@@ -40,6 +40,7 @@
     <link href="/css/stylish-portfolio.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=.85">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
   </head>
 
