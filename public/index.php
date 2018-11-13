@@ -42,6 +42,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=.85">
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
+    <!-- Import Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
   </head>
 
   <body id="page-top" data-gr-c-s-loaded="true" cz-shortcut-listen="true" class="m-0">
