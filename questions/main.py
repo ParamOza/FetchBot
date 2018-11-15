@@ -24,7 +24,10 @@ def hello(request):
 			from_num = '+{}'.format(mat.group(1))
 			break
 
-	answer = respond(q)
+	if not q:
+		answer = 'Please ask me something!! 🐶'
+	else: 
+		answer = respond(q)
 	resp.message(answer)
 	return str(resp)
 
