@@ -46,9 +46,6 @@ def get_answer(q):
 	if not ans:
 		ans = wiki.search(q)
 
-	if ans is None:
-		resp = 'Sorry, I\'m having trouble getting you an answer for your question: "{}"' \
-			.format(q)
 	elif ans['ans']:
 		resp = '🐶Here\'s what {} said: {}'.format(ans['src'], ans['ans'])
 	else:
