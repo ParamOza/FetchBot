@@ -9,6 +9,8 @@ from urllib.parse import unquote_plus as decode
 def get_response(request):
 	# get query from request
 	q = request.args.get('q')
+	if not q:
+		return '😬 That\'s a bad request.  Can you try again?'
 	q = decode(q)
 	print(q)
 
