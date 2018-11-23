@@ -9,9 +9,11 @@ import json
 def handle_personality(q):
 	if q.startswith("dad joke"):
 		joke = requests.get('https://icanhazdadjoke.com/',headers={'Accept': 'application/json'}).text
-		joke = json.loads(joke)["joke"]
-		if joke:
-			return joke
+		joke = json.loads(joke)
+		if joke["joke"]:
+			joke = joke["joke"]
+			if joke:
+				return joke
 
 	joke = requests.get('https://geek-jokes.sameerkumar.website/api') \
 	.text.strip()[1:-1]
