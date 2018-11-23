@@ -56,11 +56,14 @@ def get_answer(q):
 	if ans['ans']:
 		resp = '🐶Here\'s what {} said: {}'.format(ans['src'], ans['ans'])
 	else:
-		resp = '{} couldn\'t find an answer for your question: "{}"' \
-			.format(ans['src'], q)
+		if ans['src']:
+			resp = '{} couldn\'t find an answer for your question: "{}"' \
+				.format(ans['src'], q)
+		else:
+			resp = 'Uh-oh.  We can\'t seem to find an answer!'
 
-		resp = 'I\'ll ask my friends if they know the answer. \
-			If they send me one, I\'ll send their response right away!🐶'
+		#resp = 'I\'ll ask my friends if they know the answer. \
+		#	If they send me one, I\'ll send their response right away!🐶'
 	return resp
 
 
