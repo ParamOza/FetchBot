@@ -13,7 +13,7 @@ def handle_personality(q):
 		if joke["joke"]:
 			joke = joke["joke"]
 			if joke:
-				emoji = random.choice(['👽', '💩', '😹', '👨', '🙌', '👈', '🤦‍♀️', '😎'])
+				emoji = random.choice(['👽', '💩', '😹', '👨', '🙌', '👈', '🤦‍', '😎'])
 				return joke + " " + emoji
 
 	joke = requests.get('https://geek-jokes.sameerkumar.website/api') \
