@@ -7,7 +7,7 @@ import requests, random
 import json
 
 def handle_personality(q):
-	if q.startswith("dad joke"):
+	if q.startswith("dad joke") or q.startswith("tell me a dad joke"):
 		joke = requests.get('https://icanhazdadjoke.com/',headers={'Accept': 'application/json'}).text
 		joke = json.loads(joke)
 		if joke["joke"]:
