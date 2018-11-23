@@ -33,7 +33,7 @@ def respond(q):
 			reply = ans.text
 		return parse(reply, 'Wolfram Alpha')
 
-	try: 
+	try:
 		answer = next(res.pods)
 	except Exception as e:
 		return

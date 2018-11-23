@@ -4,8 +4,15 @@ and personalized responses.
 '''
 import wolf, wiki
 import requests, random
+import json
 
 def handle_personality(q):
+	if q.startswith("dad joke"):
+		joke = requests.get('https://icanhazdadjoke.com/',headers={'Accept': 'application/json'}).text
+		joke = json.loads(joke)["joke"]
+		if joke:
+			return joke
+
 	joke = requests.get('https://geek-jokes.sameerkumar.website/api') \
 	.text.strip()[1:-1]
 
@@ -46,7 +53,7 @@ def get_answer(q):
 	if not ans:
 		ans = wiki.search(q)
 
-	elif ans['ans']:
+	if ans['ans']:
 		resp = '🐶Here\'s what {} said: {}'.format(ans['src'], ans['ans'])
 	else:
 		resp = '{} couldn\'t find an answer for your question: "{}"' \
