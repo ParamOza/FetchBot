@@ -7,7 +7,7 @@ from responses import respond
 from urllib.parse import unquote_plus as decode
 
 def get_response(request):
-	return request.path
+	return str(request.path)
 	# get query from request
 	if 'q' in request.args:
 		q = request.args.get('q')
